@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <header>
+        <h1>Grupo JJLW</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Apresentação</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Cadastro</h2>
+        <div class="form-container">
+            <form id="contactForm">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="button" onclick="submitForm()">Enviar</button>
+            </form>
+
+            <div id="feedback"></div>
+
+            <!-- Botões adicionados -->
+            <button id="autofillButton">Preencher Formulário Automaticamente</button>
+            <button id="submitButton">Enviar Formulário (com validação simulada)</button>
+            <button id="thankYouButton">Mostrar Agradecimento</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Grupo JJLW. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
